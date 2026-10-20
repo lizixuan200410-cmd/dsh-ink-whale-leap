@@ -1,0 +1,42 @@
+{
+  "name": "dsh-ink-whale-leap",
+  "version": "1.0.0",
+  "description": "Plays a short ink-wash whale-leap animation over the DeepSeek Harness web UI as it loads, then fades out on its own.",
+  "license": "MIT",
+  "type": "module",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "splash.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "splash",
+    "launch-animation",
+    "ink-wash",
+    "whale"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizixuan200410-cmd/dsh-ink-whale-leap.git"
+  },
+  "homepage": "https://github.com/lizixuan200410-cmd/dsh-ink-whale-leap#readme",
+  "bugs": {
+    "url": "https://github.com/lizixuan200410-cmd/dsh-ink-whale-leap/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
